@@ -1,0 +1,41 @@
+.header_1{
+    float:left;
+    height:20vh;
+}
+
+.float_vertical_10{
+   
+    background-color: #333;
+    height:100vh;
+    float:left;
+    
+}
+
+.float_vertical_15{
+   
+    background-color: #888;
+    
+    height:10vh;
+    float:left;
+}
+
+.float_vertical_20{
+    background-color: #554;
+    height:100vh;
+    float:left;
+}
+
+.flex_horizontal_1{
+    flex:1;
+    background-color: #555;
+}
+
+.flex_horizontal_2{
+    flex:1;
+    background-color: #777;
+    
+}
+
+.test{
+    color:blue;
+}
