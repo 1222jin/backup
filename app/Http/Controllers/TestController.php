@@ -39,9 +39,9 @@ class TestController extends Controller
         return redirect('/index');
     }
 
-    public function test_delete($id)
+    public function test_delete(Request $request): RedirectResponse
     {
-        
+        $id=$request->input('id');
         $deleted = DB::table('tests')->where('id','=',$id)->delete();
 
         return redirect('/index');

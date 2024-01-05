@@ -28,7 +28,7 @@
                                     <td>{{$sample->name}}</td>
                                     <td> {{$sample->email}}</td>
                                     <td>
-                                        <button type="value" class="register-button btn btn-dark" data-user-id="{{$sample->id}}" data-toggle="modal" data-target="#exampleModal1">削除</button>
+                                        <button type="value" class="register-button btn btn-dark" data-user-id="{{$sample->id}}" data-user-name="{{$sample->name}}" data-user-email="{{$sample->email}}" data-toggle="modal" data-target="#exampleModal1">削除</button>
                                     </td>
                                     <td > 
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#updateModal">更新</button> 

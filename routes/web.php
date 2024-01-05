@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/index', [App\Http\Controllers\TestController::class, 'test_view']);
 Route::post('/index/add',[App\Http\Controllers\TestController::class, 'test_post']);
-Route::DELETE('/index/delete/{id}',[App\Http\Controllers\TestController::class, 'test_delete'])->name('delete_c');
+Route::DELETE('/index/delete',[App\Http\Controllers\TestController::class, 'test_delete']);
 Route::PUT('/index/update/{id}',[App\Http\Controllers\TestController::class, 'test_update'])->name('update_d');
 Route::get('/', function () {
     return view('welcome');

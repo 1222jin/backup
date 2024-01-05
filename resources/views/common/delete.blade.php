@@ -12,22 +12,26 @@
       </div>
       <div class="modal-body text-center">
       <div class="mb-3">
-            <p data-user-id="{{$sample->id}}">Id : Name:<span id="name"></span></p>
+            <p data-user-id="{{$sample->id}}"></p>
       </div>
       <div class="mb-3">
-            <p >Name : </p>
+            Name : <span id="data_name"></span>
       </div>
       <div class="mb-3">
-            <p >Email : </p>
+            Email : <span id="data_email"></span>
       </div>
       <div class="mb-3">
-            <p>Password : </p>
+            
       </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="btn_testtest">confirm delete</button>
+      <form method="POST" action="/index/delete">
+        @csrf
+        @method('DELETE')
+       
+        <button type="submit" class="btn btn-primary" id="pass_to_modal" onclick="showAlert()">confirm delete</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
+      </form>
       </div>
     </div>
   </div>
